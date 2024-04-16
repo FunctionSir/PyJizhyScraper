@@ -6,7 +6,7 @@ Date: 2024-04-16 18:32:04
 LastEditTime: 2024-04-16 19:03:28
 LastEditors: FunctionSir
 Description: https://www.jizhy.com/44/rank/school scraper.
-FilePath: /P-20240311/jizhyrank.py
+FilePath: /jizhyrank.py
 '''
 
 import os
