@@ -3,7 +3,7 @@
 Author: FunctionSir
 License: AGPLv3
 Date: 2024-04-16 18:32:04
-LastEditTime: 2024-04-16 19:03:28
+LastEditTime: 2024-04-16 19:28:23
 LastEditors: FunctionSir
 Description: https://www.jizhy.com/44/rank/school scraper.
 FilePath: /jizhyrank.py
@@ -17,7 +17,7 @@ import time
 # Curl is required.
 
 ### CONFIG HERE ###
-OutPutFile: str = ""
+OutputFile: str = ""
 ExtraCurlArgs: str = ""
 ArgPage: str = "1"
 ArgPageLen: str = "2000"
@@ -35,9 +35,9 @@ def make_url() -> str:
 
 
 # CHECK OUTPUT FILE PATH #
-if len(OutPutFile) < 1:
+if len(OutputFile) < 1:
     print("! YOU SHOULD CONFIG THE PATH OF THE OUTPUT FILE FIRST !")
     exit(1)
 
 # USE CURL TO DOWNLOAD #
-os.system("curl \'"+make_url()+"\' -o "+OutPutFile+" "+ExtraCurlArgs)
+os.system("curl \'"+make_url()+"\' -o "+OutputFile+" "+ExtraCurlArgs)
